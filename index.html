@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPTCHA Generator and Verifier</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="captcha-container">
+    <div id="captcha" class="captcha"></div>
+    <button onclick="generateCaptcha()">Generate New CAPTCHA</button>
+  </div>
+
+  <div class="verify-container">
+    <input type="text" id="userInput" placeholder="Enter CAPTCHA">
+    <button onclick="verifyCaptcha()">Verify</button>
+    <p id="verificationMessage"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
